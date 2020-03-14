@@ -17,5 +17,7 @@ Installed using Python 2.7.
 pip install chatterbot
 pip install chatterbot_corpus
 
+Ensure that these are installed with Py3 (pip3 install)
+
 ### Currently Used Resources
 1. Corpus: https://www.mapsofindia.com/maps/maharashtra/maharashtraagriculture.htm
