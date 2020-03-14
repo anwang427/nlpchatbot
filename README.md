@@ -16,6 +16,7 @@ Installed using Python 2.7.
 #### Second Attempt
 1. pip install chatterbot
 2. pip install chatterbot_corpus
+3. pip install -U scikit-learn
 
 Ensure that these are installed with Py3 (pip3 install)
 
