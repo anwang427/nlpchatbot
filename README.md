@@ -11,7 +11,7 @@ Installed using Python 2.7.
 
 In terminal, type the following:
 
-import nltk
-import numpy as np
-import random
-import string # to process standard python strings
+1. import nltk
+2. import numpy as np
+3. import random
+4. import string # to process standard python strings
