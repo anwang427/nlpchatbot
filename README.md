@@ -18,7 +18,7 @@ Installed using Python 2.7.
 2. pip install chatterbot_corpus
 3. pip install -U scikit-learn
 
-Ensure that these are installed with Py3 (pip3 install)
+Ensure that these are installed with Py3 (pip3 install). If there are issues with certificate_verify_failed, navigate to Applications/Python 3.7/Install Certificates.command, and double click.
 
 ### Currently Used Resources
 1. Corpus: https://www.mapsofindia.com/maps/maharashtra/maharashtraagriculture.htm
