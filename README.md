@@ -14,9 +14,10 @@ Installed using Python 2.7.
 3. Run nltk.download(), and download 'All packages'
 
 #### Second Attempt
-1. pip install chatterbot
-2. pip install chatterbot_corpus
-3. pip install -U scikit-learn
+1. pip3 install flask (download first)
+2. pip3 install ngrok (download first)
+3. pip3 install -U scikit-learn
+
 
 Ensure that these are installed with Py3 (pip3 install). If there are issues with certificate_verify_failed, navigate to Applications/Python 3.7/Install Certificates.command, and double click.
 
