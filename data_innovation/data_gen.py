@@ -99,6 +99,7 @@ def create_texts(num_texts):
         # 5. Combining vectors to form one word vector
         word_vectors.append(np.hstack([query_vector, time_vector, district_vector, season_vector]))
     
+    print("Successfully generated {n} word vectors".format(n=num_texts))
     return word_vectors
 
 if __name__ == "__main__":
