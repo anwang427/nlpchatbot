@@ -12,7 +12,9 @@ import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-chatbots_file = open('chatbot.txt','r',errors = 'ignore')
+import os
+
+chatbots_file = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'chatbot.txt'),'r',errors = 'ignore')
 content = chatbots_file.read()
 content = content.lower()
 #nltk.download('punkt')

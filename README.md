@@ -14,6 +14,7 @@ Installed using Python 2.7.
 3. Run nltk.download(), and download 'All packages'
 
 #### Second Attempt
+0. pip install nltk
 1. pip3 install flask 
 2. pip3 install ngrok (download first: https://ngrok.com/download)
 3. pip3 install -U scikit-learn
