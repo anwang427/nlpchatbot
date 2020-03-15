@@ -15,12 +15,14 @@ Installed using Python 2.7.
 
 #### Second Attempt
 1. pip3 install flask (download first)
-2. pip3 install ngrok (download first)
+2. pip3 install ngrok (download first: https://ngrok.com/download)
 3. pip3 install -U scikit-learn
 4. pip3 install twilio
 
 
 Ensure that these are installed with Py3 (pip3 install). If there are issues with certificate_verify_failed, navigate to Applications/Python 3.7/Install Certificates.command, and double click.
+
+
 
 ### Currently Used Resources
 1. Corpus: https://www.mapsofindia.com/maps/maharashtra/maharashtraagriculture.htm
