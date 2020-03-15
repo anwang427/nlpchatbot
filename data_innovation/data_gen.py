@@ -52,6 +52,7 @@ class SmsElements:
     }
 
     word_vector_length = len(queries) + 24 + district + len(season)
+    element_labels = list(queries.keys()) + ["{0}h".format(t) for t in range(24)] + ["District {0}".format(i + 1) for i in range(district)] + list(season.keys())
 
 
 def create_texts(num_texts):
@@ -103,4 +104,6 @@ def create_texts(num_texts):
     return word_vectors
 
 if __name__ == "__main__":
-    print(create_texts(1))
+    # print(create_texts(1))
+    for i, label in enumerate(SmsElements.element_labels):
+        print(i, label)
