@@ -14,7 +14,7 @@ Installed using Python 2.7.
 3. Run nltk.download(), and download 'All packages'
 
 #### Second Attempt
-1. pip3 install flask -- > navigate to code directory, and run <export FLASK_APP=chatbotSMS.py> then <flask run>  
+1. pip3 install flask -- > navigate to code directory, and run export FLASK_APP=chatbotSMS.py> then flask run
 2. pip3 install ngrok (download first: https://ngrok.com/download). Drag the executable into a directory you wish to use.
 3. pip3 install -U scikit-learn
 4. pip3 install twilio
