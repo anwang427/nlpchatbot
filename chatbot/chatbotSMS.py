@@ -100,7 +100,7 @@ def bot():
             
             possible_greet = SmsResponse.greeting(request, user_response)
             if(possible_greet is not None):
-                msg.body("Chikoo: " + SmsResponse.greeting(request, user_response) + ". My name is Chikoo. Ask me about the market, and all your agriculture needs.")
+                msg.body("Chikoo: " + SmsResponse.greeting(request, user_response) + " My name is Chikoo. Ask me about the market, and all your agriculture needs.")
             else:
                 msg.body("Chikoo: " + SmsResponse.response(user_response))
                 sentence_tokens.remove(user_response)
