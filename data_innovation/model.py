@@ -73,16 +73,22 @@ def tsne_kmeans(num_points=100, plot_dimension=3, num_clusters = 12):
     if plot_dimension == 2:
         for i, label in enumerate(kmeans.labels_):
             plt.scatter(transformed[i, 0], transformed[i, 1], c=COLOURS[label])
+        plt.xlabel("TSNE Dimension 1")
+        plt.ylabel("TSNE Dimension 2")
     else:
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
         for i, label in enumerate(kmeans.labels_):
             ax.scatter(transformed[i, 0], transformed[i, 1], transformed[i, 2], c=COLOURS[label])
 
-        # for i, label in enumerate(kmeans.labels_):
-        #     groups[label] = plt.scatter(transformed[i, 0], transformed[i, 1], transformed[i, 2], c=(label, label, label))
+        ax.set_xlabel("TSNE Dimension 1")
+        ax.set_ylabel("TSNE Dimension 2")
+        ax.set_zlabel("TSNE Dimension 3")
 
-        
+
+    plt.title("Kmeans Clustering (k={0}) of {1} TSNE-transformed Augmented Word Vectors".format(num_clusters, num_points))
+
+
     plt.show()
     
 
