@@ -69,6 +69,7 @@ class SmsResponse:
             if request.values.get('Body', '').lower() in GREETING_INPUTS:
                 greet = random.choice(GREETING_RESPONSES)
                 return greet
+        return None
 
 
 
@@ -96,8 +97,10 @@ def bot():
             if 'fertilizer' in user_response:
                 msg.body("Chikoo: Where are you located? (City, Country)")
                 SmsResponse.state = 1
-            if(SmsResponse.greeting(request, user_response) is not None):
-                msg.body("Chikoo: " + SmsResponse.greeting(request, user_response) + print("Chikoo: My name is Chikoo. Ask me about the market, and all your agriculture needs."))
+            
+            possible_greet = SmsResponse.greeting(request, user_response)
+            if(possible_greet is not None):
+                msg.body("Chikoo: " + SmsResponse.greeting(request, user_response) + ". My name is Chikoo. Ask me about the market, and all your agriculture needs.")
             else:
                 msg.body("Chikoo: " + SmsResponse.response(user_response))
                 sentence_tokens.remove(user_response)
