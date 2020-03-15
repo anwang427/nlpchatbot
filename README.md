@@ -26,4 +26,4 @@ Ensure that these are installed with Py3 (pip3 install). If there are issues wit
 
 ### Currently Used Resources
 1. https://www.faidelhi.org/general/Latest%20News.pdf
-2. http://agmarknet.gov.in/CommodityWiseGraph/ComGraphBoard.aspx fbclid=IwAR0cQCsEwEpb4eDPbVgackBG0IVULzKKPpmnXxai2842K1t6S4dP44fw3x4
+2. http://agmarknet.gov.in/CommodityWiseGraph/ComGraphBoard.aspxfbclid=IwAR0cQCsEwEpb4eDPbVgackBG0IVULzKKPpmnXxai2842K1t6S4dP44fw3x4
